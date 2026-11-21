@@ -4,8 +4,9 @@
 
 ## 在线预览
 
+- GitHub Pages（公开，免登录）：https://chengangrun-ai.github.io/cami-universe/
 - 豆包托管版：https://4mj4cu48v90fx.doubao.link/app/app_17jfsp5mj45
-- GitHub Pages：见仓库右侧 **Deployments** 或下方说明（开启后更新）。
+- 源码仓库：https://github.com/chengangrun-ai/cami-universe
 
 ## 本地运行
 
