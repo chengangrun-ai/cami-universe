@@ -1889,7 +1889,7 @@ const universe = (() => {
   function renderMobileShelf() {
     const box = $('#msBooks');
     if (!box) return;
-    box.innerHTML = '';
+    box.replaceChildren();
     const page = MOBILE_PAGES[mPage];
     page.items.forEach(it => box.appendChild(mobileChip(it)));
     const pos = $('#msPos');
@@ -5850,7 +5850,7 @@ const planet = (() => {
 
     // 画廊：有就排一排缩略图，点一下换大图；没有就整条藏起来
     const gal = $('#pcardGallery');
-    gal.innerHTML = '';
+    gal.replaceChildren();
     if (item.gallery && item.gallery.length) {
       item.gallery.forEach((src, i) => {
         const im = document.createElement('img');
@@ -6087,7 +6087,7 @@ const planet = (() => {
       return false;
     }
     const body = $('#storyBody');
-    body.innerHTML = '';
+    body.replaceChildren();
     STORY.paras.forEach(t => { const p = document.createElement('p'); p.textContent = t; body.appendChild(p); });
     $('#storyTitle').textContent = STORY.title;
     $('#storyModal').classList.add('show');
@@ -6800,7 +6800,7 @@ const orbit = (() => {
   function refresh() {
     const legend = $('#orbitLegend');
     if (!legend) return;
-    legend.innerHTML = '';
+    legend.replaceChildren();
     let seenAll = 0;
     CFG.forEach(cf => {
       const total = WORKS[cf.key].items.length;
